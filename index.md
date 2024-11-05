@@ -9,9 +9,7 @@ I’m Nathan, an American engineer based in London. Here are my insights, projec
 
 ## Latest Blog Posts
 
-{% for post in site.posts limit:3 %}
-- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
-{% endfor %}
+- [What I learned in filters](blog/what-I-learned-in-filters.md)
 
 ## Featured Projects
 
