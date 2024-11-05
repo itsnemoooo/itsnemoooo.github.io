@@ -3,8 +3,9 @@ layout: home
 title: Home
 description: Welcome to my Reinforcement Learning blog where I explore RL concepts, projects, and insights to connect with top RL labs in London.
 ---
+## Hello internet,
 
-I’m Nathan, a passionate Reinforcement Learning engineer based in London. Explore my insights, projects, and research on RL. All opinions are my own.
+I’m Nathan, an American engineer based in London. Here are my insights, projects, and research. All opinions are my own.
 
 ## Latest Blog Posts
 
