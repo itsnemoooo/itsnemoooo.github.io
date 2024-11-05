@@ -4,11 +4,9 @@ title: "What I learned in Filters"
 date: YYYY-MM-DD
 categories: [Blogs]
 ---
-**Course Overview**
+### What You’ll Learn
 
 Let's explore the design and analysis of analog and digital filters, covering essential techniques and concepts in filter approximation and frequency transformation. I took Filters at SMU under Dr. Peikari, and then I followed back up to TA the following year. It is perfect for those interested in signal processing, telecommunications, and control systems, offering practical and theoretical insights into creating various types of filters for real-world applications. It also set me up well for my Samsung interviews.
-
-### What You’ll Learn
 
 The course focuses on two primary areas: analog filter approximation and digital filter design. It begins with the basics of analog filter design using classic approximations, then shifts to digital filters, introducing techniques for converting analog designs into digital formats. By the end, you’ll have the skills to design low-pass, high-pass, band-pass, and band-reject filters with both analog and digital methods.
 
@@ -91,6 +89,3 @@ plt.show()
 ``` 
 ### Why this is valuable
 Filter design is a vital skill across various fields including communications, control systems, audio processing, and image processing. By understanding both analog and digital filtering techniques, you’ll be equipped to create solutions for real-world challenges in these domains.
-
-### Conclusion
-EE 5371 - Analog and Digital Filter Design provides a solid foundation in filter theory and practical design methods. Whether you’re interested in telecommunications, audio engineering, or image processing, this course will prepare you with the knowledge and skills needed to tackle complex filtering tasks. If you're aiming to specialize in signal processing or control systems, EE 5371 is an invaluable part of your academic journey.
