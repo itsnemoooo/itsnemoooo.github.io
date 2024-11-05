@@ -12,11 +12,13 @@ I’m Nathan, an American engineer based in London. Here are my insights, projec
 ## Latest Blog Posts
 
 - [What I learned in filters](blog/what-I-learned-in-filters)
+- [Sizing up design problems with sequential decision making](blog/what-I-learned-in-filters)
 
 ## Featured Projects
 
 - [GridWorld RL Agent](projects/gridworld) - Implemented a Q-Learning agent to navigate a GridWorld environment.
 - [RL Stock Trading Bot](projects/stock-trading-bot) - Developed an RL-based trading bot for stock market predictions.
+- [Sold by RL DDPG](projects/sold-by-RL) - Developed a Deep Deterministic Policy Gradient-based pricing agent to navigate complex ecommerce data.
 
 ## Connect with Me
 
