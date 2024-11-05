@@ -9,7 +9,7 @@ I’m Nathan, an American engineer based in London. Here are my insights, projec
 
 ## Latest Blog Posts
 
-- [What I learned in filters](blog/what-I-learned-in-filters.md)
+- [What I learned in filters](blog/what-I-learned-in-filters)
 
 ## Featured Projects
 
