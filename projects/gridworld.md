@@ -1,6 +1,5 @@
 ---
 title: "GridWorld RL Agent"
-date: YYYY-MM-DD
 categories: [Projects]
 ---
 

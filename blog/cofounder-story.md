@@ -1,6 +1,5 @@
 ---
 title: "co-founder story"
-date: 2024-11-06
 categories: [Blogs]
 ---
 # Lessons from failures: #001 Whose IP is it anyway?

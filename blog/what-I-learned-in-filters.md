@@ -1,6 +1,5 @@
 ---
 title: "What I learned in Filters"
-date: YYYY-MM-DD
 categories: [Blogs]
 ---
 ### What You’ll Learn
