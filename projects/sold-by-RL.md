@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "Sold by RL"
 date: YYYY-MM-DD
 categories: [Blogs]

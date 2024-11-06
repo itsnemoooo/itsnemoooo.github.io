@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "Home"
 date: YYYY-MM-DD
 description: Welcome to my Reinforcement Learning blog where I explore RL concepts, projects, and insights to connect with top RL labs in London.

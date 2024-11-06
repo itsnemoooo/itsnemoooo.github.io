@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "What I learned in Filters"
 date: YYYY-MM-DD
 categories: [Blogs]

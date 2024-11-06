@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "What is Reinforcement Learning?"
 date: YYYY-MM-DD
 categories: [Introduction]
