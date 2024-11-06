@@ -17,7 +17,7 @@ However, what was valuable for research could also be valuable for industry.
 
 A company reached out regarding the results from my paper. They were interested in forming an incubator inside of a monolithic American-based company, and they decided my results were good enough to commercialise. 
 
-Let's call them "PILL Inc". They had been working with my university for quite some time to try and get some venture programs up and running and this looked like the opportunity. They offered to fund me and instructed me to form a founding team, enlisting the help of my supervisor who they were already in contact with through her PhD funding. 
+Let's call them "PILL Inc". They had been working with my university for quite some time to try and get some venture programs up and running and this looked like the opportunity. They offered to fund me and instructed me to form a founding team, enlisting the help of a colleague from the AI centre who they were already in contact with through her PhD funding. 
 
 She can be called "Elizabeth".
 
@@ -37,7 +37,7 @@ As PILL Inc was a new incubator, they offloaded most of the due diligence back o
 
 Simple tasks, like finalizing a slide deck, were marred by her insistence on changing templates or revising facts. 
 
-Over one weekend, I took the initiative to send some slides to the VC team for feedback. Elizabeth erupted when she found out, accusing me of undermining her role as CEO. After a heated one-hour call where I mostly listened, I apologized, suggesting we work together in person to prevent miscommunication. She agreed—until later that night, when she messaged at 11:30 p.m. to cancel tomorrows work session, citing “more important things.”
+Over one weekend, I took the initiative to send some slides to the VC team for feedback. Elizabeth erupted when she found out, accusing me of undermining her role as CEO. After a heated one-hour call where I mostly listened, I apologized, suggesting we work together in person to prevent miscommunication. She agreed—until later that night, when she messaged at 11:30 p.m. to cancel tomorrow's work session, citing “more important things.”
 
 ### Communication Breakdown
 
@@ -65,11 +65,11 @@ I went home and checked Companies House, where the company we founded was listed
 
 I decided to get a second opinion, so I reached out to the VC from PILL Inc, someone who had worked with us directly and had our backs when we were getting started. I wanted to discuss the situation, luckily managing to secure an early morning slot the next day. 
 
-Elizabeth continued texting, insisting I sign the NDA “ASAP.” I sent one text stating that I had recieved the email, and that I had noticed my removal from the company, asking for clarification from her. She fired off a series of excuses, citing “corporate restructuring”, saying it was sparked from a discussion she had independently with the VC, and even suggesting that, as a non-British national, I couldn’t work here (not true—I hold a visa). According to her it was in my best interests and I should sign these documents ASAP because the VC team needed them by 8AM sharp. 
+Elizabeth continued texting, insisting I sign the NDA “ASAP.” I sent one text stating that I had received the email, and that I had noticed my removal from the company, asking for clarification from her. She fired off a series of excuses, saying it was sparked from a discussion she had independently with the VC, I needed a different contract, she had only set up the company to get cloud credits, and she suggesting that, as a non-British national, I couldn’t work for the company(not true—I hold a visa). According to her, she was acting in my best interests and I should sign these documents ASAP because the VC team needed them by 8AM sharp. 
 
 She continued texting and attempting to call late into the night.
 
-I was now very thankful I had an opportunity to speak with the VC myself the following morning.
+I was now very thankful I had an opportunity to speak with the VC team myself the following morning.
 
 ### Critical team and trust issues
 
@@ -89,7 +89,7 @@ The VC manager, however was focused on moving forward. She recommended reviewing
 
 ### I make the call
 
-After the call, I took an hour to reflect. I decided that I wouldn't be signing anything and I couldn’t continue the partnership with Elizabeth. Though I had once been excited to collaborate, this experience revealed an irreversible breach of trust and an ego trip I can't be complicit in. 
+After the call, I took an hour to reflect. I decided that I wouldn't be signing anything and I couldn’t continue the partnership with Elizabeth. Though I had once been excited to collaborate, this experience revealed an irreversible breach of trust. 
 
 So I called her.
 
