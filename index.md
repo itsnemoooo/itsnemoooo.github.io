@@ -9,7 +9,7 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
 I’m Nathan, an American engineer based in London. Here are my insights, projects, and research. All opinions are my own.
 
 ## Latest Blog Posts
-- [How not to choose a cofounder](blog/cofounder-story)
+- [Whose IP is it anyway? Lessons from sinking my startup](blog/cofounder-story)
 - [What I learned in filters](blog/what-I-learned-in-filters)
 - [Sizing up design problems with sequential decision making](blog/what-I-learned-in-filters)
 
