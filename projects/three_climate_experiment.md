@@ -1,99 +1,74 @@
 # The Three Climate Experiment
 
-## Overview
+## Project Summary
 
-This codebase implements a reinforcement learning (RL) framework for optimizing HVAC (Heating, Ventilation, and Air Conditioning) energy consumption in buildings using EnergyPlus simulations. The framework utilizes a Deep Double Q-Network (DDQN) approach to train an agent that learns to make energy-efficient decisions based on environmental data. It has been extended to include a replay across experiments framework shown to make the agent more robust to climate variation.
+### Optimising HVAC Control Across Diverse Climates: A Replay-Enhanced Deep Reinforcement Learning Approach
 
-## Directory Structure
+This project addresses the inefficiencies of traditional rule-based control (RBC) methods for managing Heating, Ventilation, and Air Conditioning (HVAC) systems. HVAC systems account for up to 40% of total energy consumption in commercial buildings and exhibit nonlinear behavior under varying weather conditions, making RBC insufficient for optimization in modern, changing environments. To tackle these challenges, we explore the potential of Deep Reinforcement Learning (DRL) to develop more adaptive and efficient control strategies.
 
-```
-three-climate-experiment/
-├── OpenStudio-1.4.0/          # EnergyPlus installation directory
-├── scripts/                    # Contains executable scripts
-│   └── run_experiment.py       # Main script to run the experiment
-├── src/                        # Source code for the project
-│   ├── __init__.py            # Marks the directory as a package
-│   ├── callbacks.py            # Callback functions for EnergyPlus
-│   ├── dqn.py                  # DQN agent implementation
-│   ├── replay_buffer.py         # Replay buffer for storing experiences
-│   └── trainer.py              # Training logic for the DQN agent
-├── parameters.txt              # Configuration parameters for the experiment
-└── README.md                   # This README file
-```
+---
 
-## Requirements
+### Research Question
 
-- Python 3.10 or higher
-- PyTorch
-- Pandas
-- NumPy
-- EnergyPlus (OpenStudio)
-- Additional dependencies listed in `requirements.txt`
+**How can a deep reinforcement learning agent efficiently manage HVAC systems across diverse and rapidly changing climate conditions?**
 
-## Setup Instructions
+---
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/itsnemoooo/three-climate-experiment
-   cd three-climate-experiment
-   ```
+### Key Contributions
 
-2. **Create a Virtual Environment**:
-   ```bash
-   python3 -m venv NewVenv
-   source NewVenv/bin/activate  # On Windows use: NewVenv\Scripts\activate
-   ```
+1. **Three Climate Experiment Framework**
+   - **Description:** Developed a novel framework that trains DRL agents across diverse climate conditions using the Replay across Experiments (RaE) methodology.
+   - **Impact:** Enhanced robustness and performance in both normal and extreme weather scenarios.
 
-3. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+2. **Novel Global Weather Dataset**
+   - **Description:** Created a unique dataset from seven countries, modified to reflect current climate variability, providing a realistic and challenging evaluation environment.
+   - **Impact:** Improved the generalization and resilience of DRL models against real-world climate variations.
+   - **Code Snippet:**
+     ```python
+     # Example of dataset perturbation
+     modified_weather_data = original_weather_data + np.random.normal(mean, std_dev, size)
+     ```
 
-4. **Set Up EnergyPlus**:
-   - Download and install EnergyPlus from the [EnergyPlus website](https://energyplus.net/).
-   - Ensure the path to EnergyPlus is correctly set in the code (see `run_experiment.py`).
+3. **Performance and Energy Savings**
+   - **Description:** Achieved significant improvements in energy efficiency and substantial annual energy savings.
+   - **Impact:** Demonstrated a 53.02% improvement in energy efficiency over baseline methods, leading to up to 1.064 million kWh annual energy savings.
+   - **Summary Table:**
+     ```markdown
+     | Category             | Performance          | Description                          | Impact                       |
+     |----------------------|----------------------|--------------------------------------|------------------------------|
+     | Baseline             | +/- 6.4% accuracy    | Solid foundation for comparisons     | Open-source refactored code  |
+     | Three Climate (10k)  | 13.34% improvement   | Energy efficiency in non-extreme climates | 162,014 kWh p.a. savings     |
+     | Three Climate (100k) | 53.02% improvement   | Significant gains in all conditions  | 378,458 kWh p.a. savings     |
+     | Modified Climate     | 54.11% improvement   | Resilient to extreme climates        | 523,616 kWh p.a. savings     |
+     | **Total Impact**     |                      |                                      | **1.064 million kWh p.a.**  |
+     ```
 
-## Running the Experiment
+---
 
-To run the experiment, execute the following command:
+### Methodology
 
-```bash
-python scripts/run_experiment.py
-```
+The project builds upon a baseline Deep Double Q-Network (DDQN) algorithm, refactoring it to incorporate the Three Climate Experiment framework. By training DRL agents across three distinct climate conditions and leveraging the RaE approach, the models demonstrate:
 
-### Parameters
+- **Improved Stability and Faster Convergence:** Enhanced learning efficiency and reliability.
+- **Enhanced Performance in Varied Conditions:** Better adaptability to both typical and extreme weather scenarios.
 
-The experiment parameters are defined in `parameters.txt`. Key parameters include:
+## Results and Impact
 
-- `state_dim`: Dimension of the state space.
-- `action_dim`: Number of possible actions (HVAC actions).
-- `lr`: Learning rate for the DQN.
-- `gamma`: Discount factor for future rewards.
-- `epsilon`: Exploration rate for the agent.
-- `epochs`: Number of training epochs.
-- `buffer_size`: Size of the replay buffer.
-- `RL_flag`: Flag to enable or disable reinforcement learning.
+- **Energy Efficiency Improvement:** The Three Climate Experiment Framework achieved a 53.02% improvement in energy efficiency over baseline methods.
+- **Energy Savings:** Total annual energy savings amounted to 1.064 million kWh.
+- **Robustness to Climate Variability:** Models validated with the modified weather dataset demonstrated resilience to extreme conditions, outperforming baselines by an average of 39.057 percentage points.
+- **Sustainable Development Goals (SDGs) Contribution:**
+  - **SDG 7:** Affordable and Clean Energy.
+  - **SDG 11:** Sustainable Cities and Communities.
+  - **SDG 13:** Climate Action.
 
-### Weather and Data Files
 
-- **Weather Files**: Located in `data/weather-data/`, these files provide environmental data for simulations.
-- **Replay Buffer Files**: Located in `data/buffer/`, these CSV files store experiences for training the DQN agent.
-
-## Code Structure
-
-- **`src/trainer.py`**: Contains the `DQNTrainer` class, which manages the training process, including setting up the baseline and training epochs.
-- **`src/callbacks.py`**: Implements callback functions that interact with EnergyPlus during simulation.
-- **`src/dqn.py`**: Defines the DQN agent, including methods for action selection and learning from experiences.
-- **`src/replay_buffer.py`**: Manages the storage and retrieval of experiences for training the agent.
-
-## Thesis
-
-For a summary of the research and methodologies used in this project, please refer to my thesis executive summary:
 
 [Thesis PDF](https://itsnemoooo.github.io/ExecutiveSummary.pdf)
 
 
-## Debugging Tips
-
-- If you encounter a `ModuleNotFoundError`, ensure that the `src` directory is included in the Python path.
-- For `KeyError` issues, check the state dictionary being passed to the agent and ensure all expected keys are present.
+## Next Steps
+- Work submitted to Neurips 2024 Workshop on Tackling Climate Change with AI
+- Implement a more sophisticated reward function to encourage energy-efficient behavior.
+- Explore the integration of other control strategies to further enhance performance.
+- Expand the experiment to include more diverse climate conditions and scenarios.
