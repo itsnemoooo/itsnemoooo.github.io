@@ -90,7 +90,7 @@ The experiment parameters are defined in `parameters.txt`. Key parameters includ
 
 For a summary of the research and methodologies used in this project, please refer to my thesis executive summary:
 
-[Thesis PDF](ExecutiveSummary.pdf)
+[Thesis PDF](https://itsnemoooo.github.io/ExecutiveSummary.pdf)
 
 
 ## Debugging Tips
