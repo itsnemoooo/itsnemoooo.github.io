@@ -23,5 +23,6 @@ I’m Nathan, an American engineer based in London. Here are my insights, projec
 - [GitHub](https://github.com/itsnemoooo)
 - [Email](mailto:natemcarey@gmail.com)
 
-## My CV
+## My CV and Thesis
 - [CV](assets/NCarey.pdf)
+- [Thesis](assets/Thesis.pdf)
