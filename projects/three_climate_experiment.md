@@ -1,5 +1,7 @@
 # The Three Climate Experiment
 
+[Thesis PDF](https://itsnemoooo.github.io/ExecutiveSummary.pdf)
+
 ## Project Summary
 
 ### Optimising HVAC Control Across Diverse Climates: A Replay-Enhanced Deep Reinforcement Learning Approach
@@ -64,7 +66,6 @@ The project builds upon a baseline Deep Double Q-Network (DDQN) algorithm, refac
 
 
 
-[Thesis PDF](https://itsnemoooo.github.io/ExecutiveSummary.pdf)
 
 
 ## Next Steps

@@ -1,50 +1,52 @@
 ---
 title: "Sold by RL"
-categories: [Blogs]
+categories: [Projects]
 ---
 
-# Sold by RL - a freelance project
+# Sold by RL - Freelance Project
 
-## Problem: 
-Small D2C businesses have failed to adapt to pricing at scale. This wastes inventory, money, and time.
+## Project Overview
 
-## Goal: 
-Sell more product on the website by allowing an RL agent to change prices based on the environment.
+### Problem Statement
+Small Direct-to-Consumer (D2C) businesses struggle to adapt pricing strategies at scale, leading to wasted inventory, financial losses, and inefficiencies.
 
-Each product gets its own agent. The agent has continuous action space with full control over pricing. 
+### Objective
+Develop a Reinforcement Learning (RL) agent to dynamically adjust product prices based on environmental factors, aiming to increase sales on the website.
 
-| State Variable       | Description                       | Data Type   | Range - TBD              |
-|----------------------|-----------------------------------|-------------|--------------------------|
-| date                 | Date of the observation           | Date        | 6mo - 1 year             |
-| current price        | Current price of the product      | Continuous  | [0, ∞)                   |
-| clicks               | Number of clicks                  | Discrete    | [0, ∞)                   |
-| # of competitors     | Number of competitors             | Discrete    | [0, ∞)                   |
-| competitor prices    | Prices of competitors             | Continuous  | [0, ∞)                   |
-| media campaign (y/n) | Whether there is a media campaign | Discrete    | {0, 1}                   |
-| decline (y/n)        | Whether product is in decline     | Discrete    | {0, 1}                   |
-| product category     | Category of the product (tree)    | String      | N/A                      |
-| collection name      | Name of the collection            | String      | N/A                      |
-| type                 | Type of the product               | String      | N/A                      |
-| color                | Color of the product              | String      | N/A                      |
-| material             | Material of the product           | String      | N/A                      |
-| holiday (y/n)             | Is there a holiday coming up?           | String      | N/A                      |
-| discount day (y/n)             | Do we discount pricing usually?          | String      | N/A                      |
+### Approach
+- Assign a dedicated RL agent to each product.
+- Utilize a continuous action space, granting the agent full control over pricing decisions.
+
+### State Variables
+
+| **State Variable**       | **Description**                       | **Data Type**   | **Range**                     |
+|--------------------------|---------------------------------------|-----------------|-------------------------------|
+| Date                     | Date of the observation               | Date            | 6 months - 1 year             |
+| Current Price            | Current price of the product          | Continuous      | [0, ∞)                        |
+| Clicks                   | Number of clicks                      | Discrete        | [0, ∞)                        |
+| Number of Competitors    | Number of competitors                 | Discrete        | [0, ∞)                        |
+| Competitor Prices        | Prices of competitors                 | Continuous      | [0, ∞)                        |
+| Media Campaign (y/n)     | Presence of a media campaign          | Discrete        | {0, 1}                        |
+| Decline (y/n)            | Product decline status                | Discrete        | {0, 1}                        |
+| Product Category         | Category of the product (tree)        | String          | N/A                           |
+| Collection Name          | Name of the collection                | String          | N/A                           |
+| Type                     | Type of the product                   | String          | N/A                           |
+| Color                    | Color of the product                  | String          | N/A                           |
+| Material                 | Material of the product               | String          | N/A                           |
+| Holiday (y/n)            | Upcoming holiday indicator            | Discrete        | {0, 1}                        |
+| Discount Day (y/n)       | Usual discount day indicator          | Discrete        | {0, 1}                        |
+
 ## Data Analysis
-Like any good engineering challenge, it starts with data analysis.
+The project begins with a comprehensive data analysis to understand the current pricing dynamics and identify key factors influencing sales.
 
+## RL Strategy Development
+Seasonality plays a crucial role in pricing strategies. Inspired by the DDQN approach used in HVAC control (refer to project-hvac), the RL agent will consider seasonal patterns and holiday cycles.
 
-## RL Brainstorming
-Time of year is very significant here. I am thinking of doing something similar to a DDQN for controlling building temperatures (seen in project-hvac) since seasonality is at play there also.
+### Key Seasonal Insights
+- **Spring Holidays:** 14 Feb, 23 Feb, 8 March
+- **Gift Cycles:** July to late August, November to New Year
 
-The spring cycle includes the following holidays:
-23 Feb
-14 Feb
-8 March
+A manually annotated dataset incorporating holiday information will enhance the agent's decision-making capabilities.
 
-With gift cycles in:
-July-Late august
-November-New Year
-
-I am thinking it would be valuable to have a manually annotated environment dataset with this holiday information. 
-
-We should start simple, with products that get sold a lot with lowish prices.
+### Initial Focus
+Start with high-volume, low-priced products to validate the RL agent's effectiveness in real-world scenarios.
