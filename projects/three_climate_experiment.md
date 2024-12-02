@@ -37,15 +37,15 @@ The executive summary of my work is available [here](https://itsnemoooo.github.i
 ### The Challenges
 I embarked on my first research project, beginning with a structured literature review. Finding relevant research was challenging, as much of the existing documentation focused on short timeframes or variables that lacked real-world significance. I began the summer, initially inspired by the potential of DRL to improve HVAC control (thanks to articles like [this](https://deepmind.google/discover/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-by-40/)), but quickly realised that the scale of the task was far greater than I initially anticipated.
 
-During my summer at the UCL AI centre, I often felt overwhelmed. There were so many decisions to make: selecting frameworks, deciding whether to use HPC or run experiments locally, understanding how dataset choices might bias results, considering the creation of a new reward function, and evaluating the real-world impact and performance of my model.
+There were so many decisions to make: selecting frameworks, deciding whether to use HPC or run experiments locally, understanding how dataset choices might bias results, considering the creation of a new reward function, and evaluating the real-world impact and performance of my model.
 
 Significant achievements start with small, focused choices. 
 
-By organizing my schedule, setting achievable goals, and learning from my colleagues, I managed to navigate these challenges with relative success.
+By organizing my schedule at the UCL AI centre, setting achievable goals, and learning from my colleagues, I managed to navigate these challenges with relative success.
 
 ### Methodology
 
-I chose to build upon a baseline Deep Double Q-Network (DDQN) algorithm, refactoring it to incorporate the Three Climate Experiment framework. The choice of algorithm was motivated by my previous experience with off-policy algorithms, and coursework in Reinforcement Learning at UCL (taught by Prof Hado van Hasselt).
+I chose to build upon a baseline algorithm: Deep Double Q-Network (DDQN). I refactored it to incorporate the Three Climate Experiment framework. The choice of algorithm was motivated by my previous experience with off-policy algorithms, and coursework in Reinforcement Learning at UCL (taught by Prof Hado van Hasselt).
 
 There were several improvements to the baseline algorithm that I experimented with: decaying epsilon-greedy exploration, prioritised experience replay, and a new reward function. However, the most significant improvement came from the Three Climate Experiment framework, as discussed in the previous section. This was inspired from discussions with my co-supervisor, Dhruva. It is a simple, but powerful idea that I would recommend to anyone looking to improve the data efficency of their Deep Reinforcement Learning models. The results are discussed in the next section.
 
@@ -100,16 +100,16 @@ The solution learned from the three climate experiment focuses on the centroid f
 ![Figure 3: Three Climate Experiment](https://itsnemoooo.github.io/assets/images/3ce.png)
 *Figure 3: Three Climate Experiment.*
 
-The results of th experiments are summarised in the table below:
+The results of the experiments are summarised in the table below:
    - **Summary Table:**
      ```markdown
-     | Category             | Performance          | Description                               | Impact                      |
-     |----------------------|----------------------|-------------------------------------------|-----------------------------|
-     | Baseline             | +/- 6.4% accuracy    | Foundation for comparisons                | Open-source refactored code |
-     | Three Climate (10k)  | 13.34% improvement   | Efficiency in non-extreme climates        | 162,014 kWh p.a. savings    |
-     | Three Climate (100k) | 53.02% improvement   | Gains in all conditions                   | 378,458 kWh p.a. savings    |
-     | Modified Climate     | 54.11% improvement   | Resilience to extreme climates            | 523,616 kWh p.a. savings    |
-     | **Total Impact**     |                      |                                           | **1.064 million kWh p.a.**  |
+     | Category             | Performance          | Impact                      |
+     |----------------------|----------------------|-----------------------------|
+     | Baseline             | +/- 6.4% accuracy    | Open-source refactored code |
+     | Three Climate (10k)  | 13.34% improvement   | 162,014 kWh p.a. savings    |
+     | Three Climate (100k) | 53.02% improvement   | 378,458 kWh p.a. savings    |
+     | Modified Climate     | 54.11% improvement   | 523,616 kWh p.a. savings    |
+     | **Total Impact**     |                      | **1.064 million kWh p.a.**  |
      ```
 ---
 
