@@ -1,7 +1,4 @@
----
-title: "What I learned in Filters"
-categories: [Blogs]
----
+
 ### What You’ll Learn
 
 Let's explore the design and analysis of analog and digital filters, covering essential techniques and concepts in filter approximation and frequency transformation. I took Filters at SMU under Dr. Peikari, and then I followed back up to TA the following year. It is perfect for those interested in signal processing, telecommunications, and control systems, offering practical and theoretical insights into creating various types of filters for real-world applications. It also set me up well for my Samsung interviews.

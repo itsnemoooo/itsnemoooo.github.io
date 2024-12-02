@@ -1,7 +1,4 @@
----
-title: "Sold by RL"
-categories: [Projects]
----
+
 
 # Sold by RL - Freelance Project
 

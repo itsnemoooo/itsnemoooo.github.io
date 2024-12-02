@@ -1,7 +1,3 @@
----
-title: "What is Reinforcement Learning?"
-categories: [Introduction]
----
 
 # What is Reinforcement Learning?
 

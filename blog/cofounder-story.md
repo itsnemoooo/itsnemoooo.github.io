@@ -1,7 +1,4 @@
----
-title: "co-founder story"
-categories: [Blogs]
----
+
 # Lessons from failures: #001 Whose IP is it anyway?
 
 ### London, UK - September, 2024 

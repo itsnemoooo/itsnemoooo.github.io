@@ -1,20 +1,19 @@
 ---
-title: About
+layout: page
+title: about me
 permalink: /about/
 ---
 
-# About Me
+# Hi, I’m Nathan. 
 
-I’m [Your Name], a dedicated Reinforcement Learning specialist with experience in [mention any relevant experience]. My goal is to contribute to cutting-edge RL research and applications in London’s thriving AI community.
+I'm an American ML engineer based in London documenting my thoughts, projects, and research.
 
-## Skills
-
-- Reinforcement Learning Algorithms
-- Python & Libraries (TensorFlow, PyTorch)
+### skills
+- Critical thinking
+- Python & ML Libraries (PyTorch, JAX, Pandas)
 - Data Analysis
 - Project Management
-
-## Experience
-
-- [Your Previous Job or Project]
-- [Another Relevant Experience]
+![Technical Experience](https://itsnemoooo.github.io/assets/images/skills.png)
+### professional experience
+- [CV](assets/NCarey.pdf)
+- [Thesis](assets/Thesis.pdf)

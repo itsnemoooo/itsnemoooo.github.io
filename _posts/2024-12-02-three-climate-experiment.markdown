@@ -1,15 +1,13 @@
 ---
-layout: default
-title: "The Three Climate Experiment"
+layout: post
+title:  "Three Climate Experiment"
+date:   2024-12-02 19:00:00 +0000
+categories: jekyll update
 ---
 
 
-# The Three Climate Experiment
-**May - September 2024**  
-*London, UK*
 
-
-### We can do better than rule-based control.
+### The world deserves better than rule-based control.
 
 ---
 ![Figure 1: Illustration of the World](https://itsnemoooo.github.io/assets/images/world.png)

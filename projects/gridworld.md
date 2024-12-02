@@ -1,7 +1,4 @@
----
-title: "GridWorld RL Agent"
-categories: [Projects]
----
+
 
 # GridWorld RL Agent
 
