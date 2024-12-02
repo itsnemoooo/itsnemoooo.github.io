@@ -40,13 +40,19 @@ The executive summary of my work is available [here](https://itsnemoooo.github.i
 
 ## Challenges
 ### Non-technical
-1. I started this research project with a structured literature review. Finding relevant research was challenging, but thanks to the following filtering process, I was able to find a lot of the existing documentation focused on significant timeframes and with variables that could be mapped to real-world controls. 
+I began the summer, initially inspired by the potential of DRL to improve HVAC control (thanks to articles like [this](https://deepmind.google/discover/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-by-40/)), but quickly realised that the scale of the task was far greater than I initially anticipated...
+
+I formally began this research project with a structured literature review. Finding relevant research was challenging, but thanks to the following filtering process, I was able to find a lot of the existing documentation focused on significant timeframes and with variables that could be mapped to real-world controls. 
 ![Figure 2: Literature Review](https://itsnemoooo.github.io/assets/images/search.png){: .half}
+
+The sources were selected from only reputable sources (as seen below), and as a result of this process, I was able to find my foundational paper ([paper](https://arxiv.org/abs/2306.13333)).
 
 ![Figure 3: Literature Review](https://itsnemoooo.github.io/assets/images/venn.png){: .half}
 
-2. I began the summer, initially inspired by the potential of DRL to improve HVAC control (thanks to articles like [this](https://deepmind.google/discover/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-by-40/)), but quickly realised that the scale of the task was far greater than I initially anticipated.
-3. Representation. I wanted to ensure the solution I designed could be used in the real-world. This meant I had to make several choices about how to represent the state and action spaces. Also, with weather data, there are many different ways to preprocess the data to make it more representative of the real-world.
+
+I wanted to ensure the solution I designed could be used in the real-world, regardless of geographical location. This meant I had to make several choices about how to represent the range of climates. 
+
+There is a wealth of weather data available [here](https://www.ladybug.tools/epwmap/), but making this historical data appear closer to the climates we experience today and in the future was a research focus of mine as well.
 
 ### Technical
 1. Environment setup. EnergyPlus is powerful, but the documentation on the API is lacking.
