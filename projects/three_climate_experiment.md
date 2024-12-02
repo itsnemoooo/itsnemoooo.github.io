@@ -49,6 +49,46 @@ I chose to build upon a baseline Deep Double Q-Network (DDQN) algorithm, refacto
 
 There were several improvements to the baseline algorithm that I experimented with: decaying epsilon-greedy exploration, prioritised experience replay, and a new reward function. However, the most significant improvement came from the Three Climate Experiment framework, as discussed in the previous section. This was inspired from discussions with my co-supervisor, Dhruva. It is a simple, but powerful idea that I would recommend to anyone looking to improve the data efficency of their Deep Reinforcement Learning models. The results are discussed in the next section.
 
+## Environment
+The environment is simulated using EnergyPlus, a building energy simulation program from the Department of Energy. The environment includes various thermal zones, each with its own temperature, humidity, and HVAC settings. The simulation is run with different weather data files to evaluate the performance of the DRL agent under diverse climate conditions.
+
+The building used in this experiment is a six-zone office building.
+
+## Action space
+The action space consists of binary actions for each HVAC unit in the building's thermal zones. Each action can either turn the heating or cooling on or off for a specific zone. The action space is represented as a list of binary values, where each value corresponds to the state of the HVAC unit in that zone.
+
+For example, the action below indicates that the second zone is active, and depending on the current temperature, it will be cooled or heated (towards the pre-defined comfort range).
+
+```python
+action = [0, 1, 0, 0, 0, 0]  # zone 2 active
+```
+
+## State space
+The state space includes various environmental and system parameters such as:
+- Outdoor temperature and humidity
+- Wind speed and direction
+- Solar angles
+- Zone temperatures and humidity levels
+- HVAC heating and cooling setpoints
+- Time-related features like hour, day, and month
+
+The state is explicitly defined as a normalized vector (of length 15). This vector contains the following features: 
+- Outdoor temperature,
+- Worktime (1/0 for working hours or not),
+- The temperature and humidity of each zone.
+
+```python
+state_0 = [O0/100,W0,T_30/100, T_10/100,T_20/100,T_30/100,T_40/100,T_50/100,T_60/100, H_10/100,H_20/100,H_30/100,H_40/100,H_50/100,H_60/100]
+```
+
+## Reward function
+The reward function is designed to balance energy consumption and thermal comfort. It includes:
+- A penalty for energy consumption (`reward_E`), which is negative and proportional to the HVAC energy usage.
+- A comfort reward (`reward_T`), which penalizes deviations from a comfortable temperature range (68°F to 77°F) in each zone.
+- An optional penalty for frequent changes in HVAC actions (`reward_signal`), which discourages instability in the system.
+
+The total reward is a combination of these components, encouraging the agent to minimize energy use while maintaining comfort.
+
 ## Results and Impact
 The model unexpectedly focused on the building's centroid zone, a behavior not explicitly programmed but emerging from the data. This indicates the model's ability to understand the problem's structure rather than just exploiting dataset specifics.
 
