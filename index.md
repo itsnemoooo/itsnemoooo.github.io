@@ -30,7 +30,7 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
 <div class="typing-animation" id="typing-text"></div> <!-- Add the typing animation -->
 <script>
     // JavaScript to set the text content
-    var text = "welcome to my journal...some thoughts, some projects";
+    var text = "welcome to my journal...some thoughts, some projects.";
     document.getElementById("typing-text").textContent = text;
     // Stop the caret blinking after the typing animation completes
     setTimeout(function() {

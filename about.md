@@ -10,10 +10,12 @@ I'm an American ML engineer based in London. I have a background in EE, networks
 
 ![Technical Experience](https://itsnemoooo.github.io/assets/images/skills.png)
 
-I started this journal to document my thoughts and projects as I explore the world of ML. 
-
 It is my hope that this will serve as a useful reference and ignite conversations towards collaboration.
 
-### professional experience
-- [CV](assets/NCarey.pdf)
-- [Thesis](assets/Thesis.pdf)
+### some quotes I like
+```
+- All models are wrong, but some are useful. - George E.P. Box
+- I would rather have questions that can't be answered than answers 
+that can't be questioned. - Richard Feynman
+```
+

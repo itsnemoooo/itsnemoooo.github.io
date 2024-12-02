@@ -17,7 +17,7 @@ title: "The Three Climate Experiment"
 
 **HVAC systems account for up to 40%** of total energy consumption in commercial buildings and **exhibit nonlinear behavior** under varying weather conditions.
 
-I devoted my Masters thesis to this exploring this problem, spending my summer days in the UCL AI centre. The potential of **Deep Reinforcement Learning** to attack this problem is tremendous, and developing more adaptive and efficient control strategies is an crucial area of research in building operations.
+I devoted my Masters thesis to this exploring this problem, spending my summer days in the UCL AI centre. I found the potential of **Deep Reinforcement Learning** to attack this problem to be tremendous, and therefore developing more adaptive and efficient control strategies is a crucial area of research.
 
 The executive summary of my work is available [here](https://itsnemoooo.github.io/ExecutiveSummary.pdf).
 
