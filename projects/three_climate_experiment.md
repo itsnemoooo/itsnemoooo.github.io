@@ -1,12 +1,17 @@
 # The Three Climate Experiment
 
-[Thesis PDF](https://itsnemoooo.github.io/ExecutiveSummary.pdf)
+[Summary PDF](https://itsnemoooo.github.io/ExecutiveSummary.pdf)
 
-## Project Summary
+![Figure 1: Illustration of the Three Climate Experiment framework](/Users/nathancarey/Blog/itsnemoooo.github.io/assets/images/RAE_PDF.pdf)
+*Figure 1: Illustration of the Three Climate Experiment framework.*
 
-### Optimising HVAC Control Across Diverse Climates: A Replay-Enhanced Deep Reinforcement Learning Approach
 
-This project addresses the inefficiencies of traditional rule-based control (RBC) methods for managing Heating, Ventilation, and Air Conditioning (HVAC) systems. HVAC systems account for up to 40% of total energy consumption in commercial buildings and exhibit nonlinear behavior under varying weather conditions, making RBC insufficient for optimization in modern, changing environments. To tackle these challenges, we explore the potential of Deep Reinforcement Learning (DRL) to develop more adaptive and efficient control strategies.
+### Traditional rule-based control methods are insufficient for modern, changing environments
+
+
+HVAC systems account for up to 40% of total energy consumption in commercial buildings and exhibit nonlinear behavior under varying weather conditions, making RBC insufficient for optimisation in modern, changing environments. With the increasing impact of climate change, these challenges are becoming even more pronounced.
+
+To tackle this, I explored the potential of Deep Reinforcement Learning (DRL) to develop more adaptive and efficient control strategies.
 
 ---
 
@@ -16,22 +21,18 @@ This project addresses the inefficiencies of traditional rule-based control (RBC
 
 ---
 
-### Key Contributions
+### My Contributions
 
 1. **Three Climate Experiment Framework**
-   - **Description:** Developed a novel framework that trains DRL agents across diverse climate conditions using the Replay across Experiments (RaE) methodology.
+   - **Description:** Leveraged a novel training framework that reuses data and continually improves DRL agents as they train across experiments. I transferred this the domain of HVAC control, training agents across diverse climate conditions using the Replay across Experiments (RaE) methodology. [Read more about the Replay across Experiments (RaE) methodology](https://arxiv.org/abs/2311.15951).
    - **Impact:** Enhanced robustness and performance in both normal and extreme weather scenarios.
 
 2. **Novel Global Weather Dataset**
    - **Description:** Created a unique dataset from seven countries, modified to reflect current climate variability, providing a realistic and challenging evaluation environment.
-   - **Impact:** Improved the generalization and resilience of DRL models against real-world climate variations.
-   - **Code Snippet:**
-     ```python
-     # Example of dataset perturbation
-     modified_weather_data = original_weather_data + np.random.normal(mean, std_dev, size)
-     ```
+   - **Impact:** Provided a more realistic and challenging evaluation environment for the generalization and resilience of DRL models against real-world climate variations.
 
-3. **Performance and Energy Savings**
+### The Results
+**How did we do?**
    - **Description:** Achieved significant improvements in energy efficiency and substantial annual energy savings.
    - **Impact:** Demonstrated a 53.02% improvement in energy efficiency over baseline methods, leading to up to 1.064 million kWh annual energy savings.
    - **Summary Table:**

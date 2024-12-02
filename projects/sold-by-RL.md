@@ -21,23 +21,41 @@ Develop a Reinforcement Learning (RL) agent to dynamically adjust product prices
 
 | **State Variable**       | **Description**                       | **Data Type**   | **Range**                     |
 |--------------------------|---------------------------------------|-----------------|-------------------------------|
-| Date                     | Date of the observation               | Date            | 6 months - 1 year             |
-| Current Price            | Current price of the product          | Continuous      | [0, ∞)                        |
-| Clicks                   | Number of clicks                      | Discrete        | [0, ∞)                        |
-| Number of Competitors    | Number of competitors                 | Discrete        | [0, ∞)                        |
-| Competitor Prices        | Prices of competitors                 | Continuous      | [0, ∞)                        |
-| Media Campaign (y/n)     | Presence of a media campaign          | Discrete        | {0, 1}                        |
-| Decline (y/n)            | Product decline status                | Discrete        | {0, 1}                        |
-| Product Category         | Category of the product (tree)        | String          | N/A                           |
-| Collection Name          | Name of the collection                | String          | N/A                           |
-| Type                     | Type of the product                   | String          | N/A                           |
-| Color                    | Color of the product                  | String          | N/A                           |
-| Material                 | Material of the product               | String          | N/A                           |
-| Holiday (y/n)            | Upcoming holiday indicator            | Discrete        | {0, 1}                        |
-| Discount Day (y/n)       | Usual discount day indicator          | Discrete        | {0, 1}                        |
+| Match Type               | Type of match                         | Integer         | N/A                           |
+| Category 1               | Primary category of the product       | String          | N/A                           |
+| Category 2               | Secondary category of the product     | String          | N/A                           |
+| Category 3               | Tertiary category of the product      | String          | N/A                           |
+| Category 4               | Quaternary category of the product    | String          | N/A                           |
+| Category 5               | Quinary category of the product       | String          | N/A                           |
+| SKU                      | Stock Keeping Unit                    | String          | N/A                           |
+| Brand                    | Brand of the product                  | String          | N/A                           |
+| Our Price                | Our price for the product             | Continuous      | N/A                           |
+| Price                    | Current price of the product          | Continuous      | N/A                           |
+| Price Before Discount    | Price before any discount             | Continuous      | N/A                           |
+| Date                     | Date of the observation               | Date            | N/A                           |
+| City                     | City identifier                       | Integer         | N/A                           |
+| Status                   | Status of the product                 | Integer         | N/A                           |
+| Competitor               | Competitor identifier                 | String          | N/A                           |
 
-## Data Analysis
+
+## Data Analysis & Feature Engineering
 The project begins with a comprehensive data analysis to understand the current pricing dynamics and identify key factors influencing sales.
+
+I used a Jupyter notebook to perform feature engineering. It includes:
+
+- **Imports**: Loads necessary libraries such as pandas, sklearn, and transformers.
+- **Data Loading**: Reads data from parquet files into pandas DataFrames.
+- **Feature Engineering**:
+  - **Category Filtering**: Filters data for specific categories of interest.
+  - **Lag Features**: Creates lag features for price data to capture temporal dependencies.
+  - **Encoding**: Encodes categorical variables using one-hot encoding and target encoding.
+  - **Translation and Embedding**: Translates category names and computes embeddings using pre-trained models.
+  - **Date Features**: Extracts date-related features such as year, month, and day of the week.
+  - **Dimensionality Reduction**: Applies PCA to reduce the dimensionality of embedding features.
+- **Model Training**: Trains machine learning models using scikit-learn, including hyperparameter tuning with Optuna.
+- **Feature Importance**: Extracts and visualizes feature importances from trained models.
+
+
 
 ## RL Strategy Development
 Seasonality plays a crucial role in pricing strategies. Inspired by the DDQN approach used in HVAC control (refer to project-hvac), the RL agent will consider seasonal patterns and holiday cycles.
@@ -50,3 +68,5 @@ A manually annotated dataset incorporating holiday information will enhance the 
 
 ### Initial Focus
 Start with high-volume, low-priced products to validate the RL agent's effectiveness in real-world scenarios.
+
+
