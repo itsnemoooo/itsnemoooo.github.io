@@ -6,7 +6,7 @@ permalink: /about/
 
 # Hi, I’m Nathan. 
 
-I'm an American ML engineer based in London.
+I'm an American ML engineer based in London. I have a background in EE, networks and I am looking forward to exploring the intersection of ML and the physical world. 
 
 ![Technical Experience](https://itsnemoooo.github.io/assets/images/skills.png)
 

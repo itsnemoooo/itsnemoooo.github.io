@@ -1,6 +1,6 @@
 
 
-# Sold by RL - Freelance Project
+# Sold by RL
 
 ## Project Overview
 
