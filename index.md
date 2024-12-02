@@ -29,17 +29,22 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
 </style>
 <div class="typing-animation" id="typing-text"></div> <!-- Add the typing animation -->
 <script>
-    // JavaScript to set the text content
-    var text = "welcome to my journal...some thoughts, some projects.";
-    document.getElementById("typing-text").textContent = text;
-    // Stop the caret blinking after the typing animation completes
+    // Function to handle typing animation
+    function typeText(text, duration) {
+        document.getElementById("typing-text").textContent = text;
+        document.querySelector('.typing-animation').style.borderRight = '3px solid'; // Reset caret
+        setTimeout(function() {
+            document.querySelector('.typing-animation').style.borderRight = 'none';
+        }, duration); // Match the duration of the typing animation
+    }
+    var text1 = "welcome to my journal...";
+    typeText(text1, 4000); // Duration for the first text
+    // Execute the second text after the first one completes
     setTimeout(function() {
-        document.querySelector('.typing-animation').style.borderRight = 'none';
-    }, 4000); // Match the duration of the typing animation
+        var text2 = "some thoughts, some projects.";
+        typeText(text2, 4000); // Duration for the second text
+    }, 4000); // Match the duration of the first text
 </script>
-
-
-
 
 ### currently contributing to:
 
