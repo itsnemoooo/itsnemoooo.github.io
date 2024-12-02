@@ -1,17 +1,19 @@
 # The Three Climate Experiment
-
-[Summary PDF](https://itsnemoooo.github.io/ExecutiveSummary.pdf)
-
-![Figure 1: Illustration of the Three Climate Experiment framework](/itsnemoooo.github.io/assets/images/RAE.png)
-*Figure 1: Illustration of the Three Climate Experiment framework.*
+**May 2024 - September 2024**  
+*London, UK*
 
 
-### Traditional rule-based control methods are insufficient for modern, changing environments
+### We can do better than rule-based control.
+
+---
+![Figure 1: Illustration of the World](https://itsnemoooo.github.io/assets/images/world.png)
 
 
 HVAC systems account for up to 40% of total energy consumption in commercial buildings and exhibit nonlinear behavior under varying weather conditions, making RBC insufficient for optimisation in modern, changing environments. With the increasing impact of climate change, these challenges are becoming even more pronounced.
 
 To tackle this, I explored the potential of Deep Reinforcement Learning (DRL) to develop more adaptive and efficient control strategies.
+
+The executive summary is available [here](https://itsnemoooo.github.io/ExecutiveSummary.pdf).
 
 ---
 
@@ -20,7 +22,8 @@ To tackle this, I explored the potential of Deep Reinforcement Learning (DRL) to
 **How can a deep reinforcement learning agent efficiently manage HVAC systems across diverse and rapidly changing climate conditions?**
 
 ---
-
+![Figure 1: Illustration of the Three Climate Experiment framework](https://itsnemoooo.github.io/assets/images/RAE.png)
+*Figure 1: Replay across Experiments (RaE) framework.*
 ### My Contributions
 
 1. **Three Climate Experiment Framework**
@@ -31,21 +34,27 @@ To tackle this, I explored the potential of Deep Reinforcement Learning (DRL) to
    - **Description:** Created a unique dataset from seven countries, modified to reflect current climate variability, providing a realistic and challenging evaluation environment.
    - **Impact:** Provided a more realistic and challenging evaluation environment for the generalization and resilience of DRL models against real-world climate variations.
 
+### The Challenges
+Embarking on my first research project, I began with a structured literature review. Finding relevant research was challenging, as much of the existing documentation focused on short timeframes or variables that lacked real-world significance.
+
+During my summer at UCL, I often felt overwhelmed by the myriad of decisions required: selecting frameworks, deciding whether to use HPC or run experiments locally, understanding how dataset choices might bias results, considering the creation of a new reward function, and evaluating the real-world impact and performance of my model.
+
+I learned that significant achievements start with small, deliberate decisions. By organizing my schedule, setting achievable goals, and learning from my colleagues, I managed to navigate these challenges.
+
 ### The Results
 **How did we do?**
    - **Description:** Achieved significant improvements in energy efficiency and substantial annual energy savings.
    - **Impact:** Demonstrated a 53.02% improvement in energy efficiency over baseline methods, leading to up to 1.064 million kWh annual energy savings.
    - **Summary Table:**
      ```markdown
-     | Category             | Performance          | Description                          | Impact                       |
-     |----------------------|----------------------|--------------------------------------|------------------------------|
-     | Baseline             | +/- 6.4% accuracy    | Solid foundation for comparisons     | Open-source refactored code  |
-     | Three Climate (10k)  | 13.34% improvement   | Energy efficiency in non-extreme climates | 162,014 kWh p.a. savings     |
-     | Three Climate (100k) | 53.02% improvement   | Significant gains in all conditions  | 378,458 kWh p.a. savings     |
-     | Modified Climate     | 54.11% improvement   | Resilient to extreme climates        | 523,616 kWh p.a. savings     |
-     | **Total Impact**     |                      |                                      | **1.064 million kWh p.a.**  |
+     | Category             | Performance          | Description                               | Impact                      |
+     |----------------------|----------------------|-------------------------------------------|-----------------------------|
+     | Baseline             | +/- 6.4% accuracy    | Foundation for comparisons                | Open-source refactored code |
+     | Three Climate (10k)  | 13.34% improvement   | Efficiency in non-extreme climates        | 162,014 kWh p.a. savings    |
+     | Three Climate (100k) | 53.02% improvement   | Gains in all conditions                   | 378,458 kWh p.a. savings    |
+     | Modified Climate     | 54.11% improvement   | Resilience to extreme climates            | 523,616 kWh p.a. savings    |
+     | **Total Impact**     |                      |                                           | **1.064 million kWh p.a.**  |
      ```
-
 ---
 
 ### Methodology
