@@ -2,7 +2,7 @@
 
 [Summary PDF](https://itsnemoooo.github.io/ExecutiveSummary.pdf)
 
-![Figure 1: Illustration of the Three Climate Experiment framework](/Users/nathancarey/Blog/itsnemoooo.github.io/assets/images/RAE.png)
+![Figure 1: Illustration of the Three Climate Experiment framework](/itsnemoooo.github.io/assets/images/RAE.png)
 *Figure 1: Illustration of the Three Climate Experiment framework.*
 
 
