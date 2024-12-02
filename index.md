@@ -24,7 +24,7 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
 }
 </style>
 <div class="box"></div> <!-- Add the animated box -->
-### latest projects
+### current projects
 
 - [The Three Climate Experiment](projects/three_climate_experiment) - Agentic building management systems. DDQN with experiments in Experience Replay buffers.
 - [Sold by RL](projects/sold-by-RL) - Developed a Deep Deterministic Policy Gradient-based pricing agent to navigate complex ecommerce data.

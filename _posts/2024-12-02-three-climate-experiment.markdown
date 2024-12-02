@@ -40,9 +40,10 @@ The executive summary of my work is available [here](https://itsnemoooo.github.i
 
 ## Challenges
 ### Non-technical
-1. I started this research project with a structured literature review. Finding relevant research was challenging, as much of the existing documentation focused on short timeframes or variables that lacked real-world significance. 
+1. I started this research project with a structured literature review. Finding relevant research was challenging, but thanks to the following filtering process, I was able to find a lot of the existing documentation focused on significant timeframes and with variables that could be mapped to real-world controls. 
+![Figure 2: Literature Review](https://itsnemoooo.github.io/assets/images/search.png){: .half}
 
-![Figure 2: Literature Review](https://itsnemoooo.github.io/assets/images/venn.png){: .half}
+![Figure 3: Literature Review](https://itsnemoooo.github.io/assets/images/venn.png){: .half}
 
 2. I began the summer, initially inspired by the potential of DRL to improve HVAC control (thanks to articles like [this](https://deepmind.google/discover/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-by-40/)), but quickly realised that the scale of the task was far greater than I initially anticipated.
 3. Representation. I wanted to ensure the solution I designed could be used in the real-world. This meant I had to make several choices about how to represent the state and action spaces. Also, with weather data, there are many different ways to preprocess the data to make it more representative of the real-world.
@@ -142,11 +143,11 @@ The total reward is a combination of these components, encouraging the agent to 
 The model unexpectedly acted mainly on **the building's centroid zone**, a behavior not explicitly programmed but emerging from the data. This indicates the model's ability to understand the problem's structure rather than just exploiting dataset specifics.
 
 We compared the performance of the Three Climate Experiment Framework to a baseline control solution:
-![Figure 3: Baseline Control](https://itsnemoooo.github.io/assets/images/base.png)
-*Figure 3: Baseline Control.*
+![Figure 4: Baseline Control](https://itsnemoooo.github.io/assets/images/base.png)
+*Figure 4: Baseline Control.*
 
-![Figure 4: Three Climate Experiment](https://itsnemoooo.github.io/assets/images/3ce.png)
-*Figure 4: Three Climate Experiment.*
+![Figure 5: Three Climate Experiment](https://itsnemoooo.github.io/assets/images/3ce.png)
+*Figure 5: Three Climate Experiment.*
 
 The results were outstanding, and the Three Climate Experiment Framework outperformed the baseline control solution by a significant margin. To ensure there was no leakage on the evaluation dataset, we created and used a separate, modified version of the dataset for evaluation. On this climate, the results were consistent with the training results.
 
