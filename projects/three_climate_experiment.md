@@ -73,7 +73,8 @@ Initial training was conducted for 20 epochs in each climate. This was sufficien
 The environment is simulated using EnergyPlus, a building energy simulation program from the Department of Energy. The environment includes various thermal zones, each with its own temperature, humidity, and HVAC settings. The simulation is run with different weather data files to evaluate the performance of the DRL agent under diverse climate conditions.
 
 The building used in this experiment is a six-zone office building.
-
+---
+![Figure 3: Building Model](https://itsnemoooo.github.io/assets/images/osm.png)
 ### Action space
 The action space consists of binary actions for each HVAC unit in the building's thermal zones. Each action can either turn the heating or cooling on or off for a specific zone. The action space is represented as a list of binary values, where each value corresponds to the state of the HVAC unit in that zone.
 
@@ -144,11 +145,11 @@ The total reward is a combination of these components, encouraging the agent to 
 The model unexpectedly acted mainly on **the building's centroid zone**, a behavior not explicitly programmed but emerging from the data. This indicates the model's ability to understand the problem's structure rather than just exploiting dataset specifics.
 
 We compared the performance of the Three Climate Experiment Framework to a baseline control solution:
-![Figure 3: Baseline Control](https://itsnemoooo.github.io/assets/images/base.png)
-*Figure 3: Baseline Control.*
+![Figure 4: Baseline Control](https://itsnemoooo.github.io/assets/images/base.png)
+*Figure 4: Baseline Control.*
 
-![Figure 4: Three Climate Experiment](https://itsnemoooo.github.io/assets/images/3ce.png)
-*Figure 4: Three Climate Experiment.*
+![Figure 5: Three Climate Experiment](https://itsnemoooo.github.io/assets/images/3ce.png)
+*Figure 5: Three Climate Experiment.*
 
 The results were outstanding, and the Three Climate Experiment Framework outperformed the baseline control solution by a significant margin. To ensure there was no leakage on the evaluation dataset, we created and used a separate, modified version of the dataset for evaluation. On this climate, the results were consistent with the training results.
 
