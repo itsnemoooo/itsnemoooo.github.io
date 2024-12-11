@@ -141,11 +141,13 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
     }
 
     .project-details p {
-        display: -webkit-box; /* Use a box layout */
+            margin: 2px 0; /* Reduce margin for the description */
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    display: -webkit-box; /* Use a box layout */
         -webkit-box-orient: vertical; /* Set orientation to vertical */
-        -webkit-line-clamp: 2; /* Limit to 2 lines for mobile */
+        -webkit-line-clamp: 3; /* Limit to 3 lines */
         overflow: hidden; /* Prevent overflow */
-        text-overflow: ellipsis; /* Add ellipsis for overflow text */
     }
 }
 
