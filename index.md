@@ -133,6 +133,22 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
     margin-top: 5px;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .contribution-image {
+        width: 100px; /* Smaller width for mobile */
+        height: 100px; /* Smaller height for mobile */
+    }
+
+    .project-details p {
+        display: -webkit-box; /* Use a box layout */
+        -webkit-box-orient: vertical; /* Set orientation to vertical */
+        -webkit-line-clamp: 2; /* Limit to 2 lines for mobile */
+        overflow: hidden; /* Prevent overflow */
+        text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    }
+}
+
 </style>
 <div class="typing-animation" id="typing-text"></div> <!-- Add the typing animation -->
 <script>
