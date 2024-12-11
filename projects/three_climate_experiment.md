@@ -1,6 +1,5 @@
 ---
 layout: default
-title: "The Three Climate Experiment"
 ---
 
 

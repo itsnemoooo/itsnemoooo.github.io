@@ -156,13 +156,13 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
 <hr>
 <!-- Filter Button Bar -->
 <div class="filter-button-bar">
-    <button class="filter-button" onclick="toggleFilter(this, 'Value-based')">Value-based</button>
-    <button class="filter-button" onclick="toggleFilter(this, 'Policy-based')">Policy-based</button>
-    <button class="filter-button" onclick="toggleFilter(this, 'Model-based')">Model-based</button>
+    <button class="filter-button" onclick="toggleFilter(this, 'Reinforcement Learning')">Reinforcement Learning</button>
     <button class="filter-button" onclick="toggleFilter(this, 'LLMs')">LLMs</button>
+    <button class="filter-button" onclick="toggleFilter(this, 'Paper Implementations')">Paper Implementations</button>
+
 </div>
 <ul id="contribution-list">
-    <li data-tags="Value-based" class="contribution-item">
+    <li data-tags="Reinforcement Learning, Paper Implementations" class="contribution-item">
         <a href="projects/three_climate_experiment.html">
             <img src="assets/images/weather.jpg" alt="The Three Climate Experiment" class="contribution-image"> <!-- Image for the project -->
         </a>
@@ -178,21 +178,7 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
             </div>
         </div>
     </li>
-    <li data-tags="Value-based" class="contribution-item">
-        <a href="projects/sold-by-RL">
-            <img src="assets/images/amazon.png" alt="Sold by RL" class="contribution-image"> <!-- Image for the project -->
-        </a>
-        <div class="project-details">
-            <h3><a href="projects/sold-by-RL">Sold by RL</a></h3> <!-- Title -->
-            <p>Optimising pricing strategies based on customer and competitor behaviour.</p> <!-- Short description -->
-            <span class="project-date">Date: TBD</span> <!-- Date placeholder -->
-            <div class="icon-list">
-                <img src="assets/icons/Python-logo-notext.svg" class="small-icon" alt="Python">
-                <img src="assets/icons/pytorch-svgrepo-com.svg" class="small-icon" alt="PyTorch"> 
-            </div>
-        </div>
-    </li>
-    <li data-tags="Value-based, LLMs" class="contribution-item">
+        <li data-tags="LLMs, Paper Implementations" class="contribution-item">
         <a href="projects/silly-shakespeare">
             <img src="assets/images/shakes.png" alt="TinyShakespeare" class="contribution-image"> <!-- Image for the project -->
         </a>
@@ -207,6 +193,20 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
             </div>
         </div>
     </li>
+    <li data-tags="Reinforcement Learning" class="contribution-item">
+        <img src="assets/images/market.png" alt="Sold by RL" class="contribution-image"> <!-- Image for the project -->
+        <div class="project-details">
+            <h3>Sold by RL</h3> <!-- Title -->
+            <p>Optimising pricing strategies based on customer and competitor behaviour.</p> <!-- Short description -->
+            <p>Use agents to dynamically adjust pricing and inventory.</p> <!-- Short description -->
+            <span class="project-date">Date: In Progress</span> <!-- Date placeholder -->
+            <div class="icon-list">
+                <img src="assets/icons/Python-logo-notext.svg" class="small-icon" alt="Python">
+                <img src="assets/icons/pytorch-svgrepo-com.svg" class="small-icon" alt="PyTorch"> 
+            </div>
+        </div>
+    </li>
+
     
 </ul>
 ## publications
@@ -214,19 +214,6 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
 ```
 - TODO
 ```
-
-## apps
-
-```
-- TODO
-```
-
-## hackathons and events
-
-```
-- TODO
-```
-
 
 <script>
     var selectedTags = [];
