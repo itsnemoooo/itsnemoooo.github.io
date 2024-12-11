@@ -14,12 +14,11 @@ title: "The Three Climate Experiment"
 ---
 ![Figure 1: Illustration of the World](https://itsnemoooo.github.io/assets/images/world.png)
 
+the code for this project is available [here](https://github.com/itsnemoooo/three-climate-experiment) along with an [executive summary](https://itsnemoooo.github.io/ExecutiveSummary.pdf) of my work.
 
 **HVAC systems account for up to 40%** of total energy consumption in commercial buildings and **exhibit nonlinear behavior** under varying weather conditions.
 
 I devoted my Masters thesis to this exploring this problem, spending my summer days in the UCL AI centre. I found the potential of **Deep Reinforcement Learning** to attack this problem to be tremendous, and therefore developing more adaptive and efficient control strategies is a crucial area of research.
-
-The executive summary of my work is available [here](https://itsnemoooo.github.io/ExecutiveSummary.pdf).
 
 ---
 
