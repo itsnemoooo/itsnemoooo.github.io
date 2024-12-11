@@ -136,18 +136,17 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
 /* Media query for mobile devices */
 @media (max-width: 600px) {
     .contribution-image {
-        width: 100px; /* Smaller width for mobile */
-        height: 100px; /* Smaller height for mobile */
+        max-width: 150px; /* Smaller width for mobile */
+        height: 150px; /* Smaller height for mobile */
     }
 
     .project-details p {
-            margin: 2px 0; /* Reduce margin for the description */
-    overflow: hidden; /* Prevent overflow */
-    text-overflow: ellipsis; /* Add ellipsis for overflow text */
-    display: -webkit-box; /* Use a box layout */
-        -webkit-box-orient: vertical; /* Set orientation to vertical */
-        -webkit-line-clamp: 3; /* Limit to 3 lines */
+        margin: 2px 0; /* Reduce margin for the description */
         overflow: hidden; /* Prevent overflow */
+        text-overflow: ellipsis; /* Add ellipsis for overflow text */
+        display: -webkit-box; /* Use a box layout */
+        -webkit-box-orient: vertical; /* Set orientation to vertical */
+        -webkit-line-clamp: 1; /* Limit to 1 line */
     }
 }
 
@@ -187,7 +186,6 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
         <div class="project-details">
             <h3><a href="projects/three_climate_experiment.html">The Three Climate Experiment</a></h3> <!-- Title -->
             <p>Agentic building management systems in PyTorch.</p> <!-- Short description -->
-            <p>Adapting novel DRL training framework for extreme weather.</p> <!-- Short description -->
             <span class="project-date">Date: May-October '24</span> <!-- Date placeholder -->
             <div class="icon-list">
                 <img src="assets/icons/Python-logo-notext.svg" class="small-icon" alt="Python">

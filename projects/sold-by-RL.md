@@ -1,19 +1,25 @@
-### Problem Statement
+---
+layout: default
+---
+
+### Sold-by-RL
+
+### problem statement
 small Direct-to-Consumer (D2C) businesses struggle to adapt pricing strategies at scale, leading to wasted inventory, financial losses, and inefficiencies.
 
 a manually annotated dataset incorporating holiday information will enhance the agent's decision-making capabilities.
 
-### Objective
+### objective
 develop a Reinforcement Learning agent to dynamically adjust product prices based on environmental factors, aiming to increase sales on the website.
 
-### Approach
+### approach
 - assign a dedicated RL agent to each product.
 - use a continuous action space, granting the agent full control over pricing decisions.
 
-### State Variables
+### state variables
 will update this section when the project is complete if permitted
 
-## Data Analysis & Feature Engineering
+### data analysis & feature engineering
 
 the project begins with a comprehensive data analysis to understand the current pricing dynamics and identify key factors influencing sales.
 
