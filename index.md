@@ -225,11 +225,14 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
 
     
 </ul>
+
+---
+
 ## publications
 
-```
-- TODO
-```
+[1] Carey, N., Optimising HVAC Control Across Diverse Climates: 
+A Replay-Enhanced Deep Reinforcement Learning Approach. 
+*Submitted to NeurIPS 2024 Workshop on Tackling Climate Change with ML.*
 
 <script>
     var selectedTags = [];
