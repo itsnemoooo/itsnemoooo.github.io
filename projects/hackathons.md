@@ -8,10 +8,22 @@ title: hackathons
     </div>
     <div class="calendar-grid">
         <div class="calendar-item">
-            <span class="date">March 2024</span>
+            <span class="date">September 2023</span>
+            <p>Venue: UCL Engineering Induction Week </p>
+            <p>Project: SafeEscape, a crowd-source platform for auto-classifying dangerous events such as forrest fires with Computer Vision (CV) and planning a path to safety.</p>
+            <p>Result: <a href="https://www.ucl.ac.uk/computer-science/news/2024/feb/ucl-hackathon-how-ai-can-assist-humanitarian-crisis">1st</a></p>
+        </div>
+        <div class="calendar-item">
+            <span class="date">January 2024</span>
             <p>Venue: E/acc </p>
             <p>Project: DoubleAgent Pod, the first AI-powered podcast with both host and guest roles and the user can steer the conversation.</p>
             <p>Result: experience</p>
+        </div>
+                <div class="calendar-item">
+            <span class="date">March 2024</span>
+            <p>Venue: AI Foundry Stride VC </p>
+            <p>Project: Morfff- a generative AI social network, sparking 1500+ conversations. Check it out <a href="https://apps.apple.com/be/app/morfff/id6474212419">here</a>   </p>
+            <p>Result: 2nd Place</p>
         </div>
         <div class="calendar-item">
             <span class="date">September 2024</span>
@@ -29,7 +41,7 @@ title: hackathons
             <span class="date">November 2024</span>
             <p>Venue: Entrepreneur First</p>
             <p>Project: MyShop AI, reinventing online shopping. We take your context (style, budget, etc) and use LLMs and a vector database to source the best products relevant for your search. </p>
-            <p>Result: <a href="https://www.dropbox.com/scl/fi/c2b644cord200mefms37a/ef-hack.mp4?rlkey=v18vq28ty4sz81llgzzufah9e&st=io7qrz6p&dl=0">submitted</a></p>
+            <p>Result: <a href="https://www.dropbox.com/scl/fi/c2b644cord200mefms37a/ef-hack.mp4?rlkey=v18vq28ty4sz81llgzzufah9e&st=io7qrz6p&dl=0">experience</a></p>
         </div>
         <!-- Add more events as needed -->
     </div>
