@@ -23,7 +23,7 @@ title: hackathons
             <span class="date">March 2024</span>
             <p>Venue: AI Foundry Stride VC </p>
             <p>Project: Morfff- a generative AI social network, sparking 1500+ conversations. Check it out <a href="https://apps.apple.com/be/app/morfff/id6474212419">here</a>   </p>
-            <p>Result: <a href= ../assets/images/morfff.png> 2nd Place </a></p>
+            <p>Result: <a href= "https://itsnemoooo.github.io/assets/images/morfff.png"> 2nd Place </a></p>
         </div>
         <div class="calendar-item">
             <span class="date">September 2024</span>
