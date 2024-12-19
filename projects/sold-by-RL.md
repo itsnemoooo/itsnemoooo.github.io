@@ -4,6 +4,10 @@ layout: default
 
 ### Sold-by-RL
 
+## this is an in-progress private project for a client!
+
+## will update this page when the project is complete if permitted
+<!-- 
 ### problem statement
 small Direct-to-Consumer (D2C) businesses struggle to adapt pricing strategies at scale, leading to wasted inventory, financial losses, and inefficiencies.
 
@@ -35,8 +39,4 @@ I used a Jupyter notebook to perform **feature engineering**, specifically:
   - **Date Features**: Extracts date-related features such as year, month, and day of the week.
   - **Dimensionality Reduction**: Applies PCA to reduce the dimensionality of embedding features.
 - **Model Training**: Trains machine learning models using scikit-learn, including hyperparameter tuning with Optuna.
-- **Feature Importance**: Extracts and visualizes feature importances from trained models.
-
-## this is an in-progress private project for a client
-
-## will update this page when the project is complete if permitted
+- **Feature Importance**: Extracts and visualizes feature importances from trained models. -->
