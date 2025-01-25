@@ -195,6 +195,21 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
         </div>
     </li>
         <li data-tags="LLMs, Paper Implementations" class="contribution-item">
+        <a href="projects/scaling-up.md">
+            <img src="assets/images/nebius.jpg" alt="Men praying to the server rack" class="contribution-image"> <!-- Image for the project -->
+        </a>
+        <div class="project-details">
+            <h3>Scaling Up Memory-Aware Transformers</h3> <!-- Title -->
+            <p>An experiment log of sparse attention, DDP, and more.</p>
+            <p>Training small LLMs (124M) distributed on Nebius Clusters.</p> 
+            <span class="project-date">Date: Jan '25-Present</span> <!-- Date placeholder -->
+            <div class="icon-list">
+                <img src="assets/icons/Python-logo-notext.svg" class="small-icon" alt="Python">
+                <img src="assets/icons/pytorch-svgrepo-com.svg" class="small-icon" alt="PyTorch"> 
+            </div>
+        </div>
+    </li>
+        <li data-tags="LLMs, Paper Implementations" class="contribution-item">
         <a href="projects/silly-shakespeare">
             <img src="assets/images/shakes.png" alt="TinyShakespeare" class="contribution-image"> <!-- Image for the project -->
         </a>
