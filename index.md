@@ -199,7 +199,7 @@ description: Welcome to my Reinforcement Learning blog where I explore RL concep
             <img src="assets/images/nebius.jpg" alt="Men praying to the server rack" class="contribution-image"> <!-- Image for the project -->
         </a>
         <div class="project-details">
-            <h3>Scaling Up Memory-Aware Transformers</h3> <!-- Title -->
+            <h3><a href="https://github.com/itsnemoooo/train-llms">Scaling Up Memory-Aware Transformers</a></h3> <!-- Title -->
             <p>An experiment log of sparse attention, DDP, and more.</p>
             <p>Training small LLMs (124M) distributed on Nebius Clusters.</p> 
             <span class="project-date">Date: Jan '25-Present</span> <!-- Date placeholder -->
