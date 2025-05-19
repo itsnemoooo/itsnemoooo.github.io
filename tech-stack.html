@@ -1,0 +1,403 @@
+---
+layout: page
+title: Technology Stack
+description: Interactive visualization of my technology stack and experience
+---
+
+<style>
+.tech-stack-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.tech-layer {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.layer-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.tech-item {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tech-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.tech-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.tech-name {
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.tech-level {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.experience-details {
+    margin-top: 15px;
+}
+
+.experience-item {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.experience-date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.experience-description {
+    margin-top: 5px;
+}
+</style>
+
+<div class="tech-stack-container">
+    <h1>Technology Stack & Experience</h1>
+    
+    <div class="tech-layer">
+        <div class="layer-title">Application Layer</div>
+        <div class="tech-grid">
+            <div class="tech-item" onclick="showModal('frontend')">
+                <img src="assets/icons/frontend.svg" alt="Frontend" class="tech-icon">
+                <div class="tech-name">Frontend</div>
+                <div class="tech-level">Advanced</div>
+            </div>
+            <div class="tech-item" onclick="showModal('backend')">
+                <img src="assets/icons/backend.svg" alt="Backend" class="tech-icon">
+                <div class="tech-name">Backend</div>
+                <div class="tech-level">Advanced</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tech-layer">
+        <div class="layer-title">Data Layer</div>
+        <div class="tech-grid">
+            <div class="tech-item" onclick="showModal('databases')">
+                <img src="assets/icons/database.svg" alt="Databases" class="tech-icon">
+                <div class="tech-name">Databases</div>
+                <div class="tech-level">Advanced</div>
+            </div>
+            <div class="tech-item" onclick="showModal('storage')">
+                <img src="assets/icons/storage.svg" alt="Storage" class="tech-icon">
+                <div class="tech-name">Storage</div>
+                <div class="tech-level">Intermediate</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tech-layer">
+        <div class="layer-title">Infrastructure Layer</div>
+        <div class="tech-grid">
+            <div class="tech-item" onclick="showModal('cloud')">
+                <img src="assets/icons/cloud.svg" alt="Cloud" class="tech-icon">
+                <div class="tech-name">Cloud</div>
+                <div class="tech-level">Advanced</div>
+            </div>
+            <div class="tech-item" onclick="showModal('networking')">
+                <img src="assets/icons/network.svg" alt="Networking" class="tech-icon">
+                <div class="tech-name">Networking</div>
+                <div class="tech-level">Intermediate</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tech-layer">
+        <div class="layer-title">5G Protocol Stack</div>
+        <div class="tech-grid">
+            <div class="tech-item" onclick="showModal('nas')">
+                <img src="assets/icons/nas.svg" alt="NAS" class="tech-icon">
+                <div class="tech-name">NAS Layer</div>
+                <div class="tech-level">Advanced</div>
+            </div>
+            <div class="tech-item" onclick="showModal('rrc')">
+                <img src="assets/icons/rrc.svg" alt="RRC" class="tech-icon">
+                <div class="tech-name">RRC Layer</div>
+                <div class="tech-level">Advanced</div>
+            </div>
+            <div class="tech-item" onclick="showModal('pdcp')">
+                <img src="assets/icons/pdcp.svg" alt="PDCP" class="tech-icon">
+                <div class="tech-name">PDCP Layer</div>
+                <div class="tech-level">Advanced</div>
+            </div>
+            <div class="tech-item" onclick="showModal('rlc')">
+                <img src="assets/icons/rlc.svg" alt="RLC" class="tech-icon">
+                <div class="tech-name">RLC Layer</div>
+                <div class="tech-level">Advanced</div>
+            </div>
+            <div class="tech-item" onclick="showModal('mac')">
+                <img src="assets/icons/mac.svg" alt="MAC" class="tech-icon">
+                <div class="tech-name">MAC Layer</div>
+                <div class="tech-level">Advanced</div>
+            </div>
+            <div class="tech-item" onclick="showModal('physical')">
+                <img src="assets/icons/physical.svg" alt="Physical Layer" class="tech-icon">
+                <div class="tech-name">Physical Layer</div>
+                <div class="tech-level">Advanced</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="techModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div id="modalContent" class="experience-details"></div>
+    </div>
+</div>
+
+<script>
+const experienceData = {
+    frontend: {
+        title: "Frontend Development",
+        experiences: [
+            {
+                date: "2022-2024",
+                description: "Led frontend development for Samsung's cloud platform, implementing responsive designs and complex state management using React and TypeScript."
+            },
+            {
+                date: "2021-2022",
+                description: "Developed interactive dashboards using D3.js and React for data visualization projects."
+            }
+        ]
+    },
+    backend: {
+        title: "Backend Development",
+        experiences: [
+            {
+                date: "2022-2024",
+                description: "Architected and implemented microservices using Node.js and Python for Samsung's cloud infrastructure."
+            },
+            {
+                date: "2021-2022",
+                description: "Built RESTful APIs and GraphQL endpoints for various client projects."
+            }
+        ]
+    },
+    databases: {
+        title: "Database Systems",
+        experiences: [
+            {
+                date: "2022-2024",
+                description: "Managed large-scale PostgreSQL and MongoDB deployments for Samsung's cloud platform."
+            },
+            {
+                date: "2021-2022",
+                description: "Optimized database queries and implemented caching strategies for high-traffic applications."
+            }
+        ]
+    },
+    storage: {
+        title: "Storage Solutions",
+        experiences: [
+            {
+                date: "2022-2024",
+                description: "Worked extensively with AWS S3 and similar storage solutions for Samsung's cloud infrastructure."
+            },
+            {
+                date: "2021-2022",
+                description: "Implemented file storage and retrieval systems for various client projects."
+            }
+        ]
+    },
+    cloud: {
+        title: "Cloud Infrastructure",
+        experiences: [
+            {
+                date: "2022-2024",
+                description: "Led cloud infrastructure development for Samsung's platform using AWS and Azure."
+            },
+            {
+                date: "2021-2022",
+                description: "Managed containerized applications using Docker and Kubernetes."
+            }
+        ]
+    },
+    networking: {
+        title: "Networking",
+        experiences: [
+            {
+                date: "2022-2024",
+                description: "Implemented secure networking solutions for Samsung's cloud platform."
+            },
+            {
+                date: "2021-2022",
+                description: "Configured load balancers and CDN integrations for high-availability systems."
+            }
+        ]
+    },
+    nas: {
+        title: "Non-Access Stratum (NAS) Layer",
+        experiences: [
+            {
+                date: "2022-2024",
+                description: "Led NAS protocol implementation for 5G NR, focusing on registration, authentication, and security procedures."
+            },
+            {
+                date: "2021-2022",
+                description: "Developed NAS message handling and mobility management for 4G LTE networks."
+            }
+        ]
+    },
+    pdcp: {
+        title: "Packet Data Convergence Protocol (PDCP) Layer",
+        experiences: [
+            {
+                date: "2022-2024",
+                description: "Implemented PDCP protocol for 5G NR, including header compression, ciphering, and integrity protection."
+            },
+            {
+                date: "2021-2022",
+                description: "Optimized PDCP buffer management and sequence number handling for improved throughput in LTE systems."
+            }
+        ]
+    },
+    rrc: {
+        title: "Radio Resource Control (RRC) Layer",
+        experiences: [
+            {
+                date: "2022-2024",
+                description: "Led development of RRC protocol implementation for 5G NR, focusing on connection establishment and mobility management."
+            },
+            {
+                date: "2021-2022",
+                description: "Implemented RRC state transitions and measurement reporting mechanisms for 4G LTE networks."
+            }
+        ]
+    },
+    rlc: {
+        title: "Radio Link Control (RLC) Layer",
+        experiences: [
+            {
+                date: "2022-2024",
+                description: "Developed RLC protocol stack for 5G NR, implementing both acknowledged and unacknowledged modes."
+            },
+            {
+                date: "2021-2022",
+                description: "Optimized RLC buffer management and segmentation/reassembly procedures for improved throughput."
+            }
+        ]
+    },
+    mac: {
+        title: "Medium Access Control (MAC) Layer",
+        experiences: [
+            {
+                date: "2022-2024",
+                description: "Implemented MAC layer protocols for 5G NR, including scheduling, HARQ, and random access procedures."
+            },
+            {
+                date: "2021-2022",
+                description: "Developed MAC layer optimizations for improved resource utilization in LTE networks."
+            }
+        ]
+    },
+    physical: {
+        title: "Physical Layer",
+        experiences: [
+            {
+                date: "2022-2024",
+                description: "Led physical layer implementation for 5G NR, focusing on OFDM modulation and channel coding."
+            },
+            {
+                date: "2021-2022",
+                description: "Developed physical layer algorithms for channel estimation and equalization in LTE systems."
+            }
+        ]
+    }
+};
+
+function showModal(tech) {
+    const modal = document.getElementById('techModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+    
+    const data = experienceData[tech];
+    modalTitle.textContent = data.title;
+    
+    modalContent.innerHTML = data.experiences.map(exp => `
+        <div class="experience-item">
+            <div class="experience-date">${exp.date}</div>
+            <div class="experience-description">${exp.description}</div>
+        </div>
+    `).join('');
+    
+    modal.style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('techModal').style.display = 'none';
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('techModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+</script> 
